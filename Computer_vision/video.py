@@ -12,7 +12,7 @@ while cam.isOpened():
     frame = cv2.resize(frame, None, fx=.5, fy=.5)
     # teen panch yaha pe khatm
     cv2.imshow('video', frame)
-    if cv2.waitKey(100) == 27: # ESC KEY
+    if cv2.waitKey(10) == 27: # ESC KEY
         break
 cam.release()
 cv2.destroyAllWindows()

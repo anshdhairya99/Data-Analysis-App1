@@ -6,9 +6,9 @@ import seaborn as sns
 
 @st.cache_data()
 def load_data():
-    return pd.read_csv('datasets/data.csv')
+    return pd.read_csv('Datasets/data.csv')
 
-with st.spinner("Loading dataset..."):
+with st.spinner("Loading Dataset..."):
        df = load_data()
 
 st.title('My Datascience App')

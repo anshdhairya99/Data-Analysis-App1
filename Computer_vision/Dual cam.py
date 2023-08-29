@@ -18,6 +18,7 @@ while True:
     # background subtraction
     mask = bs.apply(img1)
     fg = cv2.bitwise_and(img1, img1, mask=mask)
+    # If you used the multiple times of imshow then came more display
     cv2.imshow("mask", mask)
     cv2.imshow("fg", fg)
 
